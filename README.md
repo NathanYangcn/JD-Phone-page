@@ -1,5 +1,7 @@
 # 预览效果
+需要使用 chrome 模拟器查看页面效果，或者使用手机查看页面效果。
 [预览地址](https://nathanyangcn.github.io/JD-Phone-page/index.html)
+
 
 ## 简要说明
 #### 本篇使用动态 rem 制作的页面
