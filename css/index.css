@@ -1,0 +1,76 @@
+#content .quick-enter-nav {
+    padding: .2667rem 0; /* 10px */
+    width: 100%;
+    font-size: 0;
+    background: #f3f3f3;
+    overflow: hidden;
+}
+
+#content .quick-enter-nav li {
+    float: left;
+    margin: .18rem 0; /* 6.75px */
+    width: 20%;
+    height: 1.36rem;
+    text-align: center;
+}
+
+#content .quick-enter-nav img {
+    width: .9067rem;  /* 34px */
+    height: .9067rem;  /* 34px */
+}
+
+#content .quick-enter-nav p {
+    margin-top: .08rem; /* 3px */
+    font-size: 0.3467rem; /* 13px */
+    color: #000;
+    line-height: 1;
+}
+
+#content .ad-banner {
+    width: 10rem; /* 375px */
+    height: 2.56rem; /* 96px */
+    overflow: hidden;
+}
+#content .ad-banner img {
+    display: block;
+    width: 100%;
+    height: 2.56rem; /* 96px */
+}
+
+#content .express-news {
+    margin: 0 .24rem .24rem .24rem; /* 9px */
+    padding: 0 .16rem; /* 6px */
+    border-radius: .16rem;
+    height: .8rem; /* 30px */
+    line-height: .8rem;
+    background: #fff;
+    overflow: hidden;
+}
+#content .news-logo {
+    float: left;
+    height: 100%;
+}
+#content .news-logo img {
+    margin-top: -0.08rem; /* 3px */
+    width: 1.9467rem; /* 73px */
+    height: 0.4267rem; /* 16px */
+    vertical-align: middle;
+}
+#content .news-list {
+    padding-right: .24rem; /*padding: 0 42px 0 75px;*/ /* 9px */
+    height: 100%;
+    overflow: hidden;
+}
+#content .hot-word {
+    padding: 0 .16rem 0 .32rem; /* 6px 12px */
+    color: red;
+}
+#content .news-more {
+    float: right;
+    height: 100%;
+}
+#content .news-more span {
+    padding-left: .16rem; /* 6px */
+    border-left: 1px solid #ccc;
+}
+

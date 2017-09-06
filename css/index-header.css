@@ -1,0 +1,117 @@
+/*header 占位符*/
+#top-fixed header {
+    width: 100%;
+    height: 1.3334rem;
+}
+
+/*header 固定定位*/
+#scroll-wrap #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+/*downloadApp start*/
+#downloadApp {
+    width: 100%;
+    height: 1.3334rem;
+    background: #232323;
+    line-height: 1.3334rem;
+    text-align: center;
+}
+#downloadApp > div {
+    float: left;
+    height: 100%;
+}
+#downloadApp .downloadApp-close {
+    margin-left: 2.5%;
+    font-size: 0.4267rem;
+    color: #aaa;
+}
+#downloadApp .downloadApp-logo {
+    margin-left: 5%;
+    margin-right: 2.5%;
+    font-size: 0;
+}
+#downloadApp .downloadApp-logo img {
+    width: 0.9334rem;
+    height: 0.9334rem;
+    vertical-align: middle;
+}
+#downloadApp .downloadApp-text {
+    padding-top: 0.1867rem;
+    width: 40%;
+    font-size: 0.3467rem;
+    font-weight: 500;
+    color: #999;
+    text-align: left;
+    line-height: 0.48rem;
+}
+#downloadApp .downloadApp-text .downloadApp-up {
+    color: #fff;
+}
+#downloadApp .downloadApp-action {
+    float: right;
+    width: 3.2rem;
+    font-size: 0.4rem;
+    background: #cd2525;
+}
+#downloadApp .downloadApp-action a {
+    color: #fff;
+}
+/*downloadApp end*/
+
+/*searchBox start*/
+#searchBox-wrap {
+    background: transparent;
+}
+
+#searchBox {
+    position: relative;
+    padding: 0 1.2267rem 0 0.2667rem;
+    width: 100%;
+    height: 1.04rem;
+    line-height: 1.04rem;
+    overflow: hidden;
+}
+#searchBox .searchInput {
+    padding: 0 0.2667rem 0 1.4134rem;
+    border: none;
+    border-radius: 1.04rem;
+    width: 100%;
+    height: 0.7734rem;
+    font-size: 0.32rem;
+    color: #666;
+    background: #fff;
+    outline: none;
+}
+#searchBox .login {
+    position: absolute;
+    right: 0.2667rem;
+    top: 0;
+    height: 100%;
+    font-size: 0.3466rem;
+    font-weight: 500;
+    color: #fff;
+}
+#searchBox .jd-logo {
+    position: absolute;
+    top: 0.3734rem;
+    left: 0.48rem;
+    width: 0.48rem;
+    height: 0.3466rem;
+    background: url('../images/jd-icon.png') no-repeat 0 0;
+    background-size: 0.48rem 0.3466rem;
+}
+#searchBox .search-icon {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.9334rem;
+    margin: 0 0.1334rem 0 0.2667rem;
+    width: 0.32rem;
+    height: 0.32rem;
+    background: url('../images/search.png') no-repeat right center;
+    background-size: 0.32rem 0.32rem;
+}
+/*searchBox end*/

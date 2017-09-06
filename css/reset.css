@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 0.32rem/1.5 "Microsoft YaHei", Arial, Helvetica, "sans-serif";
+    background: #f5f5f5;
+    -webkit-overflow-scrolling:touch;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.iconfont {
+    font-size: 0.32rem;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,91 @@
+.seckill {
+    background: #fff;
+}
+
+.seckill .seckill-title {
+    height: .9067rem; /* 34px */
+    line-height: .9067rem;
+    overflow: hidden;
+}
+
+.seckill .seckill-clock {
+    float: left;
+    width: 68%;
+    color: #232326;
+}
+.seckill .seckill-logo {
+    float: left;
+    margin-top: .08rem; /* 3px */
+    width: 1.84rem; /* 69px */
+    height: .72rem; /* 27px */
+}
+.seckill .seckill-session {
+    float: left;
+    margin: 0 .16rem; /* 6px */
+    font-weight: bold;
+}
+.seckill .seckill-countdown {
+    float: left;
+}
+
+.seckill .seckill-more-link {
+    float: right;
+    padding-right: .24rem; /* 9px */
+    width: 32%;
+    color: #f23030;
+    text-align: right;
+}
+.seckill .iconfont {
+    font-size: .32rem; /* 12px */
+}
+
+.seckill .seckill-container {
+    width: 100%;
+    height: 3.7334rem; /* 140px */
+    overflow: hidden;
+}
+.seckill .seckill-item-ct {
+    width: 29.6rem; /* 1110px */
+    height: 100%;
+    text-align: center;
+}
+.seckill .seckill-item {
+    float: left;
+    width: 2.96rem; /* 111px */
+    height: 100%;
+}
+.seckill .seckill-item-imgct {
+    padding: 0 .32rem; /* 12px */
+    border-right: 1px solid #f0f0f0;
+}
+.seckill .seckill-item-imgct img {
+    width: 2.37rem; /* 87px */
+    height: 2.37rem;
+    vertical-align: middle;
+}
+
+.seckill .seckill-item-price {
+    margin-top: .24rem; /* 9px */
+    padding: 0 .32rem; /* 12px */
+    height: 1.1467rem; /* 43px */
+}
+.seckill .seckill-item-price > span {
+    display: block;
+}
+.seckill .seckill-item-price .seckill-new-proce {
+    font-size: .4267rem; /* 16px */
+    font-weight: bold;
+    color: #f23030;
+    line-height: .4267rem;
+}
+.seckill .seckill-item-price .seckill-origin-price {
+    margin-top: .08rem; /* 3px */
+    color: #686868;
+    text-decoration: line-through;
+    line-height: .32rem; /* 12px */
+}
+.seckill .seckill-item-price em {
+    padding-right: .08rem; /* 3px */
+    font-size: .24rem; /* 9px */
+    font-style: normal;
+}
