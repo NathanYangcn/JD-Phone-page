@@ -54,26 +54,28 @@
                         </div>
                     </div>  <!--header 定位元素-->
                     <div id="content">
-                        <div class="carsouel">
-                            <ul class="carsouel-itemCt">
-                                <li class="carsouel-item carsouel-curitem"><a href="#"><img src="images/10001.jpg"></a></li>
-                                <li class="carsouel-item"><a href="#"><img src="images/10002.jpg"></a></li>
-                                <li class="carsouel-item"><a href="#"><img src="images/10003.jpg"></a></li>
-                                <li class="carsouel-item"><a href="#"><img src="images/10004.jpg"></a></li>
-                                <li class="carsouel-item"><a href="#"><img src="images/10005.jpg"></a></li>
-                                <li class="carsouel-item"><a href="#"><img src="images/10006.jpg"></a></li>
-                                <li class="carsouel-item"><a href="#"><img src="images/10007.jpg"></a></li>
-                                <li class="carsouel-item"><a href="#"><img src="images/10008.jpg"></a></li>
-                            </ul>
-                            <div class="carsouel-bullets">
-                                <i class="carsouel-btn carsouel-curbtn"></i>
-                                <i class="carsouel-btn"></i>
-                                <i class="carsouel-btn"></i>
-                                <i class="carsouel-btn"></i>
-                                <i class="carsouel-btn"></i>
-                                <i class="carsouel-btn"></i>
-                                <i class="carsouel-btn"></i>
-                                <i class="carsouel-btn"></i>
+                        <div id="carsouel-lg">
+                            <div class="carsouel">
+                                <ul class="carsouel-itemCt">
+                                    <li class="carsouel-item carsouel-curitem"><a href="#"><img src="images/10001.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/10002.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/10003.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/10004.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/10005.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/10006.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/10007.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/10008.jpg"></a></li>
+                                </ul>
+                                <div class="carsouel-bullets">
+                                    <i class="carsouel-btn carsouel-curbtn"></i>
+                                    <i class="carsouel-btn"></i>
+                                    <i class="carsouel-btn"></i>
+                                    <i class="carsouel-btn"></i>
+                                    <i class="carsouel-btn"></i>
+                                    <i class="carsouel-btn"></i>
+                                    <i class="carsouel-btn"></i>
+                                    <i class="carsouel-btn"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="quick-enter-nav">
@@ -430,6 +432,18 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="carsouel-sm">
+                            <div class="carsouel">
+                                <ul class="carsouel-itemCt">
+                                    <li class="carsouel-item carsouel-curitem"><a href="#"><img src="images/60001.jpg"></a></li>
+                                    <li class="carsouel-item"><a href="#"><img src="images/60002.jpg"></a></li>
+                                </ul>
+                                <div class="carsouel-bullets">
+                                    <i class="carsouel-btn carsouel-curbtn"></i>
+                                    <i class="carsouel-btn"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="footer">footer</div>
                 </div>
@@ -481,5 +495,15 @@
         </div>
         <div class="gotop"></div>
     </div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/touch.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/gotop.js"></script>
+    <script>
+        Carsouel('#carsouel-lg');
+        Carsouel('#carsouel-sm');
+        Countdown('.seckill', '2017-09-10', '2017-09-07')
+    </script>
 </body>
 </html>
