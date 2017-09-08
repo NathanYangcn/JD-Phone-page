@@ -37,3 +37,9 @@ document.write('<style>' + css + '</style>');
 #### 额外知识点
 1. 一像素问题（需要再想想）
 2. [淘宝flexible方案](https://github.com/amfe/lib-flexible)（需要再看看）
+
+#### 目前完成的内容
+1. 横向拖拽——封装完成，可通过 new drag() 复用代码，但有待扩展
+2. 轮播——封装完成，可通过 new carousel() 复用代码
+3. 倒计时——封装完成，可通过 new countdown() 复用代码，但有待扩展
+4. 商品展示模块——可通过添加相同的类名和 DOM 结构增加商品的展示
