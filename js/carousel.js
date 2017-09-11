@@ -19,12 +19,14 @@ carsouel.prototype = {
         var self = this;
         this.carsouel.on('swipeLeft', function (e) {
             e.preventDefault();
+            e.stopPropagation();
             clearInterval(self.timer);
             self.playNext();
             self.autoPlay();
         });
         this.carsouel.on('swipeRight', function (e) {
             e.preventDefault();
+            e.stopPropagation();
             clearInterval(self.timer);
             self.playPre();
             self.autoPlay();
