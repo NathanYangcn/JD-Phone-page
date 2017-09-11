@@ -14,32 +14,36 @@ drag.prototype = {
     },
     bind: function () {
         var self = this;
-        this.$ele.on('touchstart', function (e) {
-            e.preventDefault();
-            self.isDrag = true;
-            var touches = e.touches[0];
-            self.mouseOffsetX = touches.clientX - self.$ele.offset().left;
-        });
-        this.$ele.on('touchmove', function (e) {
-            e.preventDefault();
-            var touches = e.touches[0];
-            var oLeft = touches.clientX - self.mouseOffsetX;
-            if(oLeft>=0){
-                self.isDrag = false;
-            }
-            if(self.isDrag === true) {
-                self.$ele.css('left', oLeft+'px')
-            }
-        });
-        this.$ele.on('touchend', function () {
+        this.$ele.on('touchstart', self.startHandler);
+        this.$ele.on('swipeLeft', self.moveHandler);
+        this.$ele.on('swipeUp', self.moveHandler);
+        this.$ele.on('touchend', self.endHandler);
+    },
+    startHandler: function (e) {
+        e.preventDefault();
+        self.isDrag = true;
+        var touches = e.touches[0];
+        self.mouseOffsetX = touches.clientX - self.$ele.offset().left;
+    },
+    moveHandler: function (e) {
+        e.preventDefault();
+        var touches = e.touches[0];
+        var oLeft = touches.clientX - self.mouseOffsetX;
+        if(oLeft>=0){
             self.isDrag = false;
-            if(self.$ele.offset().left > 0) {
-                self.$ele.animate({'left': 0});
-            }
-            if(self.$ele.offset().left < self.eleCtWidth - self.eleWidth) { // 最小临界值
-                self.$ele.animate({'left': self.eleCtWidth - self.eleWidth});
-            }
-        });
+        }
+        if(self.isDrag === true) {
+            self.$ele.css('left', oLeft+'px')
+        }
+    },
+    endHandler: function () {
+        self.isDrag = false;
+        if(self.$ele.offset().left > 0) {
+            self.$ele.animate({'left': 0});
+        }
+        if(self.$ele.offset().left < self.eleCtWidth - self.eleWidth) { // 最小临界值
+            self.$ele.animate({'left': self.eleCtWidth - self.eleWidth});
+        }
     }
 };
 function Drag(ele, eleCt) {
