@@ -9,6 +9,8 @@ carsouel.prototype = {
         this.carsouel = $('.carsouel', ct);
         this.$itemCt = $('.carsouel .carsouel-itemCt', ct);
         this.$item = $('.carsouel .carsouel-item', ct);
+        // this.$itemCt.append(this.$item.eq(0).clone());
+        // this.$itemCt.prepend(this.$item.eq(-1).clone());
         this.itemWidth = this.$item.width();
         this.$bullet = $('.carsouel .carsouel-btn', ct);
         this.curIndex = 0;
@@ -41,7 +43,9 @@ carsouel.prototype = {
         };
     },
     play: function() {
-        this.$itemCt.css('left', -this.curIndex * this.itemWidth + 'px');
+        // var posPre = this.$itemCt.css('left');
+        var posCur = -this.curIndex * this.itemWidth + 'px';
+        this.$itemCt.animate({'left': posCur});
         this.setBullet();
     },
     setIndex: function (type) {
